@@ -13,6 +13,7 @@
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "@tsconfig/svelte": "^5.0.6",
     "@types/node": "^24.10.1",
+    "@types/seedrandom": "^3.0.8",
     "svelte": "^5.45.2",
     "svelte-check": "^4.3.4",
     "typescript": "~5.9.3",
@@ -20,5 +21,9 @@
   },
   "overrides": {
     "vite": "^8.0.0-beta.13"
+  },
+  "dependencies": {
+    "@ariel-mutebi/circle-discovery": "^1.1.0",
+    "seedrandom": "^3.0.5"
   }
 }
