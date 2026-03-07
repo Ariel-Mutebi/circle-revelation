@@ -2,7 +2,6 @@
   import { state, coverage, assertionPassed } from "$lib/state.js";
   import { Badge } from "$lib/components/ui/badge";
   import { Separator } from "$lib/components/ui/separator";
-  import { ScrollArea } from "$lib/components/ui/scroll-area";
   import PanelTitle from "$lib/components/PanelTitle.svelte";
   import StatBox from "$lib/components/StatBox.svelte";
   import CoverageBar from "$lib/components/CoverageBar.svelte";
@@ -51,10 +50,10 @@
   <div class="p-4 pb-0 shrink-0">
     <PanelTitle title="Query Log" />
   </div>
-  <ScrollArea class="flex-1 px-4 pb-3">
+  <div class="flex-1 overflow-y-auto px-4 pb-3 min-h-0">
     {#each $state.log as entry (entry.callIndex)}
       <LogRow {entry} />
     {/each}
-  </ScrollArea>
+  </div>
 
 </aside>

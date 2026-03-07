@@ -31,7 +31,7 @@
     "vite": "^8.0.0-beta.13"
   },
   "dependencies": {
-    "@ariel-mutebi/circle-discovery": "^1.1.0",
+    "@ariel-mutebi/circle-discovery": "^1.1.3",
     "@tailwindcss/vite": "^4.2.1",
     "d3": "^7.9.0",
     "seedrandom": "^3.0.5",
