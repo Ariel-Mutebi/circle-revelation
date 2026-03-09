@@ -109,7 +109,7 @@
 
       if (signal.aborted) return;
 
-      const confirmedFound = found.filter(p => trueSet.has(p.id)).length;
+      const confirmedFound = [...discoveredIds].filter(id => trueSet.has(id)).length;
       const pct = Math.round(confirmedFound / truePlaces.length * 100);
 
       setStatus("done");
