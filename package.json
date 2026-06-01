@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run sync && vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "sync": "cp -rv ../circle-discovery/dist/. node_modules/@ariel-mutebi/circle-discovery/dist/ && echo 'Success'"
   },
   "devDependencies": {
     "@internationalized/date": "^3.12.0",
