@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
     "dev": "concurrently \"npm run sync:watch\" \"npm run vite\"",
-    "sync:watch": "chokidar '../circle-discovery/dist/**' -c 'cp -rf ../circle-discovery/dist/. node_modules/@ariel-mutebi/circle-discovery/dist/ && rm -rf node_modules/.vite/deps'"
+    "sync:watch": "chokidar '../circle-discovery/dist/**' --initial -c 'cp -rv ../circle-discovery/dist/. node_modules/@ariel-mutebi/circle-discovery/dist/ && rm -rf node_modules/.vite/deps'"
   },
   "devDependencies": {
     "@internationalized/date": "^3.12.0",
